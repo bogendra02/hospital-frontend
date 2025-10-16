@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react' // or vue if you're using Vue
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/hospital-frontend/', // <--- IMPORTANT
   plugins: [react()],
+  base: '/hospital-frontend/', // 👈 very important for GitHub Pages
 })
